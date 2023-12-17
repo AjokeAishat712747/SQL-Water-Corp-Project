@@ -1,5 +1,8 @@
 # SQL-Water-Corp-Project
 SQL and Data Visualization Hands-On using Water Corporation Dataset (Water Consumption)
+Raw Data:
+[WaterCorporationProjectt.xls](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/files/13694875/WaterCorporationProjectt.xls)
+
 Aim: To Clean,Analyze and visualize Water Corporation Dataset (Water Consumption) which shows usage and supply of water to client.
 Process: 
 1. Excel Data was loaded using the Microsoft SQL Server Managment Studio.
@@ -27,6 +30,8 @@ where f.latestrecord ='Y' and cu.LatestRecord= 'Y'
 */
 
 2. All Foriegn key constriant on the fact table were link to corresponding Primary key on dimension tables using Edit data on Azure Data Studio
+
+Facts tables shown below.
    
 [Results.xlsx](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/files/13694862/Results.xlsx)
 
