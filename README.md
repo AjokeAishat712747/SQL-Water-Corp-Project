@@ -26,4 +26,8 @@ FROM wcp.Consumptions as c
 where f.latestrecord ='Y' and cu.LatestRecord= 'Y'
 */
 
+2. All Foriegn key constriant on the fact table were link to corresponding Primary key on dimension tables using Edit data on Azure Data Studio
    
+[Results.xlsx](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/files/13694862/Results.xlsx)
+
+[Resultsq.xlsx](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/files/13694866/Resultsq.xlsx)
