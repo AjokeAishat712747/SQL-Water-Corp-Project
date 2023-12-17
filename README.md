@@ -142,7 +142,6 @@ Select Sum(c.ConsumptionLtr) as 'Total Supply', DATENAME(MONTH, c.Date) as 'mont
 */
  ![Q8](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/6f128024-2b28-4ffa-bf50-f009e59649e1)
 
-
  ---Rank the Customers based on their total Water Consumption--
 
      /*
@@ -152,7 +151,7 @@ Select Sum(c.ConsumptionLtr) as 'Total consumption per customer',cd.CustomerID
           INNER JOIN wcp.Facilities as f on f.FacilitySK=c.FacilitySk
           Group by cd.CustomerID
           ORDER by 1 DESC;
-
+*/
    ![Q9](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/4a1b7bf5-d622-4d82-a940-1b55d0dd53d1)
 
-*/
+
