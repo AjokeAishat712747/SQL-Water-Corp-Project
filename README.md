@@ -88,6 +88,9 @@ group by DATENAME(Month, c.[Date])
 order by 'Total consumption per month' DESC
 */
 
+![Q4](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/c94d5d57-0507-4cc1-98f9-b36a1f516b96)
+
+
 ---Which Customer Type consumes the least amount of water?--
 /*
 SELECT ct.value as 'Sector Name', ct.CustomerType , Sum(c.consumptionLtr) as "Water Consumption per Type"
@@ -96,6 +99,8 @@ INNER JOIN wcp.CustomerTypes as ct on ct.CustomerTypeSK=c.CustomerTypeSk
 Group by ct.CustomerType,ct.value
 ORDER by "Water Consumption per Type"
 */
+![Q5](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/98adbe60-cc3e-4dcc-99ec-800f66714c1b)
+
 
 --How much water does "Big Bear Treatment Plant" supply to "City of Edmonton"; broken down by each month?--
 /*
@@ -107,6 +112,7 @@ Select Sum(c.ConsumptionLtr) as 'Water supply per Month', DATENAME(MONTH, c.Date
           Group by DATENAME(MONTH, c.Date)
           ORDER by 1 DESC;
 */
+![Q6](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/e66a7b48-e50f-41f2-9253-3344a2e0caa8)
 
 ---which Facility recorded consumption 95% of its maximum capacity and for how many consecutive months?--
 PS:CTE was used
@@ -122,6 +128,8 @@ Group by btt.name,btt.monthname
 order by "supply per capacity " DESC
 */
 
+![Q7](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/8aff0e26-2efa-4043-bf25-8fc17586fbf9)
+
 
 --How much water does "Neighbourhood 1" receives from "Jane Doe Treatment Plant" in March 2023?--
 /*
@@ -132,7 +140,9 @@ Select Sum(c.ConsumptionLtr) as 'Total Supply', DATENAME(MONTH, c.Date) as 'mont
          WHERE DATENAME(MONTH, c.Date)= 'March' and f.Name='Jane Doe Treatment Plant' and p.neighbourhood='neighbourhood 1'
           Group by DATENAME(MONTH, c.Date),f.Name
 */
-     
+ ![Q8](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/6f128024-2b28-4ffa-bf50-f009e59649e1)
+
+
  ---Rank the Customers based on their total Water Consumption--
 
      /*
@@ -142,4 +152,7 @@ Select Sum(c.ConsumptionLtr) as 'Total consumption per customer',cd.CustomerID
           INNER JOIN wcp.Facilities as f on f.FacilitySK=c.FacilitySk
           Group by cd.CustomerID
           ORDER by 1 DESC;
+
+   ![Q9](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/4a1b7bf5-d622-4d82-a940-1b55d0dd53d1)
+
 */
