@@ -154,4 +154,7 @@ Select Sum(c.ConsumptionLtr) as 'Total consumption per customer',cd.CustomerID
 */
    ![Q9](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/4a1b7bf5-d622-4d82-a940-1b55d0dd53d1)
 
+Data Visualization using PowerBI
+
+![image](https://github.com/AjokeAishat712747/SQL-Water-Corp-Project/assets/139535267/1b4c2c57-dd8c-4e84-996b-b0ecfe1c5c71)
 
